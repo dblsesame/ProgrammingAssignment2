@@ -1,8 +1,8 @@
 ## This is a set of 2 functions that works together to provide cache for
 ## matrix inverse.  makeCacheMatrix function creates an object that holds
-## the matrix and its inverse.  solveCache use the object created by 
-## makeCacheMatrix and return inverse only compute once and use the cache 
-## value in later calls to improve performance.
+## the matrix and its inverse.  cacheSolve takes the object created by 
+## makeCacheMatrix and return inverse. It only computes the inverve once 
+## and use the cache value in later calls to improve performance.
 
 ## makeCacheMatrix creates a object to hold a matrix and its inverse
 ## and provide 4 accessor methods for the 2 values
