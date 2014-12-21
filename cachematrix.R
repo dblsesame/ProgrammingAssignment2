@@ -25,9 +25,11 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## solveCache use the object created by makeCacheMatrix and return the 
+## cacheSolve takes the object created by makeCacheMatrix and return the 
 ## inverse of the matrix, first by compute the inverse using the solve function
 ## when the cache is not there and save the result in cache for later use.
+## later calls to cacheSolve will benefit from the saved cache and save time.
+## when a cached result is used, message "getting cached data" will show up.
 
 cacheSolve <- function(x, ...) {
        
